@@ -17,7 +17,11 @@ for i in stuList:
     total+=math 
     noOfStd+=1   
     print (f"The math grade of {i['name']} is {math}")
- 
-avg=float(total/noOfStd) # to calculate the average of math grades for each student
+try:
+    noOfStd==len(stuList)==0
+    avg=float(total/noOfStd) # to calculate the average of math grades for each student
+except ZeroDivisionError:
+    print("No students in the list to calculate the average.")
+
 print (f"The average of math grades is {avg}")
 
