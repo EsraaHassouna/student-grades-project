@@ -27,11 +27,11 @@ try:
     sara = next((student for student in stuList if student['name'] == 'Sara'), None)
     if sara == None:#sara not found in the list 
         raise LookupError("Sara not found in the student list.")
-    
+    print("Enter Sara's new age:")
     age=int(input())
     sara['age']=age
     if age<0:
-        raise ValueError("age have to be positive number")
+        raise ValueError("age must be positive number")
     print (sara)      
 
 except ZeroDivisionError:
