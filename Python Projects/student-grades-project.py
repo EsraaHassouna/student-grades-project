@@ -1,5 +1,6 @@
 #my first small project in python
 #print(stuList[0]['grades']['Math']) # to access any value in the list of dictionaries
+
 stuList = [    
     {'name':'Omar','age':'15', 'grades':{'Math':90, 'Science':80, 'English':70}}, #stuList[0]
     {'name':'Sara','age':'17', 'grades':{'Math':85, 'Science':95, 'English':80}}, #stuList[1]
@@ -32,7 +33,9 @@ try:
     sara['age']=age
     if age<0:
         raise ValueError("age must be positive number")
-    print (sara)      
+    
+    else:
+         print (sara)      
 
 except ZeroDivisionError:
     print("No students in the list to calculate the average.")    
