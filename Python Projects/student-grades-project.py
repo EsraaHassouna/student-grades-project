@@ -43,3 +43,8 @@ except ValueError as e:
         print(e)
 except LookupError as e:    
         print(e)
+
+#appended from file handling.py
+#by using append mode (a) it will add the finally block to the end of the file
+finally:
+	print("Thank you for using the student grades program.")
