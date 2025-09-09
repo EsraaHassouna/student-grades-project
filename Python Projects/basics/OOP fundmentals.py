@@ -45,7 +45,7 @@ stu4= Student("null","catroon","Female",95)
 
 print(Student.deleteUser)
 
-print(Student.removeNotAllowedNames(stu4))
+print(Student.removeNotAllowedNames())
 
 print(Student.deleteUser)
         
