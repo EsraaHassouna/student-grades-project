@@ -1,8 +1,9 @@
 # Reading a file
+"""
 f=open("G:\Study\Python\Python Projects\student-grades-project.py","r")
 print(f.read())
 f.close()
-
+"""
 # Writing to a file
 #there are three modes to write a file
 #  1. Write mode (w) - This mode is used to write data to a file.
@@ -31,9 +32,14 @@ fileWrite.close()
 #  3. Exclusive creation mode (x) - This mode is used to create a new file.
 #  If the file already exists, an error will be raised. 
 
-"""try:
-    with open("G:\Study\Python\Python Projects\student-grades-project1.py","x") as fileWrite:
-        fileWrite.write('finally:\n\tprint("Thank you for using the student grades program.")')
+try:
+    with open("G:\Study\Python\Python Projects\Exclusive creations.py","x") as fileWrite:
+        fileWrite.write("in the first run it will create the file \n")
+        fileWrite.write("in the second run it will raises an excisting file error \n")
+        fileWrite.read()
         fileWrite.close()
+
 except FileExistsError:
-    print("File already exists.")"""
+    print("File already exists.")
+
+    
